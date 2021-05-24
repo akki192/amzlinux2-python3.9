@@ -2,7 +2,7 @@ FROM amazonlinux:2
 
 RUN yum -y update --skip-broken \
     && yum -y upgrade \
-    && yum install -y shadow-utils unzip tar xz gzip gcc openssl-devel bzip2-devel libffi-devel make \
+    && yum install -y shadow-utils unzip tar xz gzip gcc openssl-devel bzip2-devel libffi-devel make wget \
     && mkdir -p /apps/python
 
 WORKDIR /apps/python
