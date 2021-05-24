@@ -31,4 +31,6 @@ jobs:
       
       - name: Push Docker image
         id: push-image
-        run: docker push ashetgaonkar/amzlinux2-python3.9:1.0
+        run: |
+          docker tag amzlinux2-python3.9 ashetgaonkar/amzlinux2-python3.9:1.0
+          docker push ashetgaonkar/amzlinux2-python3.9:1.0
