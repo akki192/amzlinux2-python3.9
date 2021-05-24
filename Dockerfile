@@ -43,4 +43,4 @@ RUN set -ex; \
 		\) -exec rm -rf '{}' +; \
 	rm -f get-pip.py
 
-CMD ["amzlinux2-python3.9"]
+CMD ["python3.9"]
